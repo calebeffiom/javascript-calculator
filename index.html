@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .container{
+            width: 50%;
+            margin: auto;
+        }
+        .container h1{
+            font-family: fantasy;
+            font-size: 50px;
+            text-align: center;
+        }
+        .inner-container{
+            width: 20%;
+            margin: auto;
+            text-align: center;
+        }
+        .inner-container2{
+            width: 18%;
+            height: 50px;
+            margin: auto;
+            
+        }
+        .inner-container2 p{
+            height: 20px;
+            border: solid black 2px;              
+        }
+        .container input{
+            width: 150px;
+            height: 30px;
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+        .inner-container3{
+            width: 20%;
+            margin: auto;
+            text-align: center;
+        }
+        button{                                                         
+            margin-bottom: 10px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>calculator</h1>
+        <div class="inner-container">
+            <input type="number" id="input1" value="">
+            <input type="number" id="input2" value="">
+            <button onclick="addition()">add</button> <button onclick="subtraction()">subtract</button> <button onclick="multiplication()">multiply</button> <button onclick="division()">divide</button>
+
+        </div>
+        <div class="inner-container2" id="answer">
+            <p id="answer-para"></p>
+            
+        </div>
+        <div class="inner-container3">
+            <button onclick="clearall()">clear</button>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
